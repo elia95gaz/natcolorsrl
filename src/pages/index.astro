@@ -1,0 +1,42 @@
+
+---
+const cliente = "Cliente Demo";
+const titolo = "Risultato finale";
+const iframeUrl = "https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=xxxxxxxx";
+---
+
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Landing di {cliente}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        padding: 40px;
+        margin: 0;
+        background: #f9f9f9;
+      }
+      iframe {
+        width: 100%;
+        max-width: 800px;
+        height: 500px;
+        border: none;
+      }
+      h1 {
+        margin-bottom: 0.5em;
+      }
+      p {
+        font-size: 1.2em;
+        color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{titolo}</h1>
+    <p>{cliente}</p>
+    <iframe src={iframeUrl} allowfullscreen></iframe>
+  </body>
+</html>
